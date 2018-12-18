@@ -1,6 +1,7 @@
 import React from 'react';
 
 
+
 function Table(props) {
     return(
         <ul>
@@ -9,3 +10,5 @@ function Table(props) {
         </ul>
     )
 }
+
+export default Table;

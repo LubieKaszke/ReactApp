@@ -1,12 +1,13 @@
 import React from 'react';
 import axios from 'axios';
+import Table from './Table';
 
 export default class TableList extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            tables = []
-        }
+            tables: []
+        };
         this.onPick = this.onPick.bind(this);
     }
     
@@ -19,7 +20,7 @@ export default class TableList extends React.Component{
     }
 
     onPick(table) {
-        event.preventDefault();
+        // event.preventDefault();
     }
 
     render(){

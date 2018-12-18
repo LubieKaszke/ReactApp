@@ -4,6 +4,7 @@ import './App.css';
 import Meal from './Components/Meal';
 import MenuList from './Components/MenuList';
 import Form from './Components/Form';
+import TableList from './Components/TableList';
 import {BrowserRouter as Router,Route,Link} from "react-router-dom";
 
 class App extends Component {
@@ -30,6 +31,7 @@ class App extends Component {
           <Form label="gowno"></Form>
           <h1>Menu options</h1>
           <Route exact path="/" component={MenuList}></Route>
+          <Route exact path="/tables" component={TableList}></Route>
         </header>
       </div>
       </Router>
