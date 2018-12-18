@@ -1,13 +1,13 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-const Message = props => <div>{props.msg}</div>;
 
-export default class Meal extends Component{
-    render(){
+function Meal(props){
         return(
             <div>
-                <Message msg="kot"/>
+                <h4>{props.nazwa}</h4>
+                <p>{props.cena}{props.opis}</p>
             </div>
         );
-    }
 }
+
+export default Meal;
