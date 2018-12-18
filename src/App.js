@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Meal from './Components/Meal';
+import MenuList from './Components/MenuList';
 import {BrowserRouter as Router,Route,Link} from "react-router-dom";
 
 class App extends Component {
@@ -16,18 +17,18 @@ class App extends Component {
               <Link to ="/">Menu List</Link>
             </li>
             <li>
-              <Link to ="/add">Tables</Link>
+              <Link to ="/tables">Tables</Link>
             </li>
             <li>
-              <Link to ="/edit">Confirm reservation</Link>
+              <Link to ="/confirm">Confirm reservation</Link>
             </li>
             <li>
-              <Link to ="/edit">Orders</Link>
+              <Link to ="/orders">Orders</Link>
             </li>
           </ul>
           <h1>Menu options</h1>
+          <Route exact path="/" component={MenuList}></Route>
         </header>
-        <Meal></Meal>
       </div>
       </Router>
     );
