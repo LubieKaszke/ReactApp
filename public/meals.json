@@ -1,0 +1,16 @@
+[{
+    "nazwa": "kot",
+    "cena": 123,
+    "opis": "do jedzenia"
+  },
+  {
+    "nazwa": "pies",
+    "cena": 12,
+    "opis": "biega"
+  },
+  {
+    "nazwa": "kebab",
+    "cena": 1,
+    "opis": "do jedzenia"
+  }]
+
