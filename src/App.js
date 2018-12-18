@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Meal from './Components/Meal';
 import MenuList from './Components/MenuList';
+import Form from './Components/Form';
 import {BrowserRouter as Router,Route,Link} from "react-router-dom";
 
 class App extends Component {
@@ -26,6 +27,7 @@ class App extends Component {
               <Link to ="/orders">Orders</Link>
             </li>
           </ul>
+          <Form label="gowno"></Form>
           <h1>Menu options</h1>
           <Route exact path="/" component={MenuList}></Route>
         </header>

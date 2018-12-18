@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Meal from './Meal';
 
 export default class MealList extends React.Component{
     state ={
@@ -18,9 +19,10 @@ export default class MealList extends React.Component{
 
 
     render(){
-        return( <ul>
-                {this.state.meals.map(meal => <li><p>{meal.nazwa}</p>{meal.opis}</li>)}
-            </ul>)
+        let mappedMeals = this.state.meals.map((meal)=>{
+            return <Meal opis={meal.opis} nazwa={meal.nazwa} cena={meal.cena}></Meal> 
+        })
+        return mappedMeals;
     }
     
 } 
