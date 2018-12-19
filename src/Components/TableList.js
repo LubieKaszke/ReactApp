@@ -21,7 +21,9 @@ export default class TableList extends React.Component{
 
     onPick(table) {
         // event.preventDefault();
+        console.log("dupa");
     }
+    
 
     render(){
         let tablesList = this.state.tables.map((table) => {
