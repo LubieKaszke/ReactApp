@@ -19,9 +19,9 @@ export default class TableList extends React.Component{
         });
     }
 
-    onPick(table) {
-        // event.preventDefault();
-        console.log("dupa");
+    onPick = (id) => (e) => {
+        e.preventDefault();
+        console.log(id);
     }
     
 
@@ -29,7 +29,7 @@ export default class TableList extends React.Component{
         let tablesList = this.state.tables.map((table) => {
             return(
                 <li key={table.id}>
-                    <Table table={table} onPick={(one) => this.onPick(one)}/>
+                    <Table table={table} onPick={(id) => this.onPick(id)}/>
                 </li>)
         })
         return (<ul>
