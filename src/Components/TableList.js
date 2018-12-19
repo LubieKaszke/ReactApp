@@ -27,9 +27,9 @@ export default class TableList extends React.Component{
 
     render(){
         let tablesList = this.state.tables.map((table) => {
-            return <ul>
-                <li key={table.id}>
-                    <Table  table={table} onPick={(one) => this.onPick(one)}/>
+            return <ul key={table.id}>
+                <li>
+                    <Table table={table} onPick={(one) => this.onPick(one)}/>
                 </li>
             </ul>
         })
