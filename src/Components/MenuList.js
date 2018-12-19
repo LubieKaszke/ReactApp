@@ -10,7 +10,6 @@ export default class MealList extends React.Component{
    
 
     componentDidMount(){
-        console.log("dupa");
         axios.get("meals.json").then(res =>{
         console.log(res);    
         this.setState({meals: res.data});
